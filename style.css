@@ -3,7 +3,7 @@
   --blue-light : #73bfc4;
   --rose : #dda295;
   --taupe : #8c8074;
-  --beige : #f5eee1;
+  --beige : #d1ccc8;
   --noir : #303538;
 
   font-size: 62.5%;
@@ -22,8 +22,9 @@ body {
   width: 100%;
   height:100vh;
   font-family: 'Architects Daughter', cursive;
-  background: var(--beige);
-
+  color: var(--noir);
+  /* background: var(--beige); */
+  
 }
 
 a {
@@ -51,29 +52,25 @@ li {
 
 h1 {
   font-weight: 100;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 120px;
 }
 
 h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 2.8rem;
 }
-
-
-
 
 /*btn-burger*/
 
 .navigationIcon {
   z-index: 1000;
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  background: var(--taupe);
-  width: 70px;
-  height: 70px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 50px;
+  height: 55px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -83,9 +80,10 @@ h2 {
 }
 
 .barre {
-  width: 40px;
+  background: var(--taupe);
+  opacity: 0.7;
+  width: 50px;
   height: 5px;
-  background: var(--beige)
 }
 
 .b1 {
@@ -110,7 +108,7 @@ h2 {
   z-index: 900;
   width: 100%;
   height: 100%;
-  background: var(--taupe);
+  background: var(--beige);
   position: absolute;
   left: -100%;
   top: 0;
@@ -136,7 +134,7 @@ h2 {
 
 .item {
   font-size: 35px;
-  color: #f1f1f1;
+  color: white;
 }
 
 .label {
@@ -157,6 +155,7 @@ h2 {
 
   .accueil {
     background-image: url('./images/bg-header-tablette.png');
+    min-height: 1100px;
 
   }
 
@@ -167,7 +166,12 @@ h2 {
 
   .accueil {
     background-image: url('./images/bg-header-desktop.png');
+    min-height: 1000px;
 
+  }
+
+  .accueil h1 {
+    padding-top: 50px;
   }
 
 
