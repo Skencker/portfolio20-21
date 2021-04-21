@@ -158,6 +158,7 @@ h3 {
     align-items:center;
     justify-content: center;
     margin: 30px;
+
   }
 
   h3 {
@@ -182,6 +183,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 100px;
   }
 
   .presentation .icon {
@@ -237,8 +239,33 @@ h3 {
       100%{opacity: 0;}
     }
 
-    
+    /*footer*/
 
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position:fixed;
+      width: 100%;
+      bottom: 0;
+      height: 100px;
+      background: linear-gradient(transparent, var(--beige));
+    
+   }
+    
+    .footer-social {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 50%;
+    }
+
+    .footer-social i {
+      font-size: 4rem;
+      color: var(--taupe);
+
+    }
 }
 
 @media screen and (min-width: 500px) {
@@ -250,10 +277,21 @@ h3 {
 
   /*section presentation*/
 
+  h3 {
+    font-size: 2.5rem;
+    color:var(--blue-dark) ;
+  }
+
+
   .text-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
       width: 90%;
-    }
-    
+    }  
     
   .presentation .icons {
     flex-direction: row;
@@ -270,8 +308,14 @@ h3 {
     padding-top: 30px;
     width: 10%;
   }
- 
+}
 
+
+@media screen and (min-width: 700px) {
+
+  .accueil h1 {
+    font-size: 5rem;
+  }
 
 }
 @media screen and (min-width: 900px) {
@@ -279,16 +323,20 @@ h3 {
   .accueil {
     background-image: url('./images/bg-header-desktop.png');
     min-height: 1000px;
-
   }
 
   .accueil h1 {
-    padding-top: 50px;
+    padding-top: 100px;
   }
+}
 
+@media screen and (min-width: 1200px) {
+  
+  .accueil h1 {
+    font-size: 6rem;
+  }
   /*presentation*/
 
-  
   .text-presentation {
     width: 100%;
   }
@@ -296,8 +344,20 @@ h3 {
   .presentation .text {
     padding-right: 100px;
     padding-left: 100px;
+    padding-top: 20px;
   }
 
+  .presentation p {
+    font-size: 18px;
+  }
 
+  /*icons*/
 
+  .presentation i {
+    font-size: 10rem;
+  }
+
+  .icons {
+    padding-top: 70px;
+  }
 }
