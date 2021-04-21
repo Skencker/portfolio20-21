@@ -193,6 +193,21 @@ h3 {
     font-size: 10rem;
     padding: 20px;
     color: var(--rose);
+    opacity: 1;
+    animation-name: fondu;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fondu {
+    0%{opacity: 1;}
+    10%{opacity: 0.5;}
+    20%{opacity: 0.25;}
+    30%{opacity: 0;}
+    70%{opacity: 0;}
+    80%{opacity: 0.25;}
+    90%{opacity: 0.5;}
+    100%{opacity: 1;}
   }
   .icon .label {
     position: absolute;
@@ -201,24 +216,28 @@ h3 {
     text-align: center;
     padding-top: 20px;
     overflow: hidden;
-    transition: all 0.5s;
-    color: transparent;
+    animation-name: fondu-inv;
+    
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: var(--blue-dark);
   }
+
+    @keyframes fondu-inv {
+      0%{opacity: 0;}
+      20%{opacity: 0;}
+      30%{opacity: 0.25;}
+      40%{opacity: 0.5;}
+      50%{opacity: 1;}
+      60%{opacity: 0.5;}
+      70%{opacity: 0.25;}
+      100%{opacity: 0;}
+    }
 
   .presentation .label {
     display: inline-block;
     height: 100px;
   }
-
-  .label:hover {
-    color: var(--blue-dark);
-    background: white;
-  }
-
-  .presentation i:hover {
-    color: transparent;
-  }
-
 
 }
 
@@ -227,7 +246,6 @@ h3 {
   .accueil {
     background-image: url('./images/bg-header-tablette.png');
     min-height: 1100px;
-
   }
 
 
