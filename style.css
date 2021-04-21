@@ -169,6 +169,7 @@ h3 {
     text-align: justify;
     font-size: 1.5rem;
     line-height: 2;
+    /* margin-right: 20px; */
   }
 
   .presentation a {
@@ -188,6 +189,8 @@ h3 {
     justify-content: center;
     align-items: center;
   }
+
+  /*animation icon*/
 
   .presentation i {
     font-size: 10rem;
@@ -212,12 +215,12 @@ h3 {
   .icon .label {
     position: absolute;
     width: 50%;
+    height: 100px;
     font-size: 4rem;
     text-align: center;
     padding-top: 20px;
     overflow: hidden;
     animation-name: fondu-inv;
-    
     animation-duration: 5s;
     animation-iteration-count: infinite;
     color: var(--blue-dark);
@@ -234,10 +237,7 @@ h3 {
       100%{opacity: 0;}
     }
 
-  .presentation .label {
-    display: inline-block;
-    height: 100px;
-  }
+    
 
 }
 
@@ -248,6 +248,29 @@ h3 {
     min-height: 1100px;
   }
 
+  /*section presentation*/
+
+  .text-presentation {
+      width: 90%;
+    }
+    
+    
+  .presentation .icons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .presentation i {
+    font-size: 4rem;
+  }
+
+  .presentation .label {
+    font-size: 2rem;
+    padding-top: 30px;
+    width: 10%;
+  }
+ 
 
 
 }
@@ -261,6 +284,18 @@ h3 {
 
   .accueil h1 {
     padding-top: 50px;
+  }
+
+  /*presentation*/
+
+  
+  .text-presentation {
+    width: 100%;
+  }
+
+  .presentation .text {
+    padding-right: 100px;
+    padding-left: 100px;
   }
 
 
