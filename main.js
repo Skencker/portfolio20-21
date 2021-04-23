@@ -4,6 +4,8 @@ const b1 = document.querySelector('.b1');
 const b2 = document.querySelector('.b2');
 const b3 = document.querySelector('.b3');
 let toggle = 0;
+const titre1 = document.querySelector('.titre-1')
+const titre2 = document.querySelector('.titre-2')
 
 btn_nav.addEventListener('click', () => {
   
@@ -17,6 +19,8 @@ btn_nav.addEventListener('click', () => {
     container_menu.style.left = '0%';
     container_menu.style.bottom = '0%';
     container_menu.style.transition = 'all 1s ease-out';
+    titre1.style.display = 'none'
+    titre2.style.display = 'block'
   } else {
     toggle--;
     b2.style.display = 'block'
@@ -27,6 +31,8 @@ btn_nav.addEventListener('click', () => {
     container_menu.style.left = '-100%';
     container_menu.style.bottom = '-100%';
     container_menu.style.transition = 'all 1s ease-in';
+    titre1.style.display = 'block'
+    titre2.style.display = 'none'
   }
 })
 

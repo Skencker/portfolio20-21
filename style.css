@@ -114,6 +114,23 @@ h3 {
     transition: all 0.2s;
   }
 
+  .titre {
+    position: absolute;
+    top: 45px;
+    right: 120px;
+    z-index: 1000;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--rose);
+    font-family: 'Architects Daughter', cursive;
+
+  }
+
+  .titre-2 {
+    display: none;
+  }
+
+
   /*menu*/
 
   .container-menu {
