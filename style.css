@@ -356,8 +356,8 @@ h3 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-left: 100px;
-      padding-right: 100px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
     
     .site-adobe {
