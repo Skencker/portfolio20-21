@@ -52,7 +52,7 @@ h3 {
 
   .accueil {
     width: 100%;
-    height: 100%;
+    height: 100px;
     min-height: 900px;
     position: relative;
 
@@ -169,13 +169,7 @@ h3 {
     background-size: 100% 100%;
   }
 
-
-
-  
-
   /*section presentation*/
-
-
   .presentation {
     display: flex;
     flex-direction: column;
@@ -297,7 +291,42 @@ h3 {
     .footer-social i {
       font-size: 4rem;
       color: var(--taupe);
+    }
 
+    /*page projets*/
+
+    section {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 50px;
+    }
+    section a {
+      color: var(--noir);
+      font-size: 1.5rem;
+      padding-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .realisation,
+    .animations {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    
+    .site-adobe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .site-adobe a:not(:first-child) {
+      font-weight:normal;
+      font-size: 1.2rem;
+    }
+    .site-adobe a {
+      padding-bottom: 20px;
     }
 }
 
@@ -309,13 +338,10 @@ h3 {
   }
 
   /*section presentation*/
-
   h3 {
     font-size: 2.5rem;
-   
+  
   }
-
-
   .text-presentation {
     display: flex;
     flex-direction: column;
@@ -325,10 +351,8 @@ h3 {
   .text {
       width: 90%;
       display: flex;
- 
     }  
-     
-    
+  
   .presentation .icons {
     flex-direction: row;
     justify-content: center;
@@ -345,7 +369,6 @@ h3 {
     width: 10%;
   }
 }
-
 
 @media screen and (min-width: 700px) {
 
@@ -370,7 +393,7 @@ h3 {
 
   .accueil {
     background-image: url('./images/bg-header-desktop.png');
-    min-height: 800px;
+    /* min-height: 800px; */
   }
 
   .accueil h1 {
@@ -379,7 +402,6 @@ h3 {
   .presentation h3 {
     font-size: 3rem;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -426,7 +448,6 @@ h3 {
     padding-top: 25px;
   }
 }
-
 
 @media screen and (min-width: 1500px) {
   .img1 {

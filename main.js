@@ -15,6 +15,7 @@ btn_nav.addEventListener('click', () => {
     b3.style.transform = 'rotate(-225deg)';
     b3.style.top = '-2.5px';
     container_menu.style.left = '0%';
+    container_menu.style.bottom = '0%';
     container_menu.style.transition = 'all 1s ease-out';
   } else {
     toggle--;
@@ -24,6 +25,7 @@ btn_nav.addEventListener('click', () => {
     b3.style.transform = 'rotate(0deg)';
     b3.style.top = '10px';
     container_menu.style.left = '-100%';
+    container_menu.style.bottom = '-100%';
     container_menu.style.transition = 'all 1s ease-in';
   }
 })
