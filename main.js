@@ -19,8 +19,6 @@ btn_nav.addEventListener('click', () => {
     container_menu.style.left = '0%';
     container_menu.style.bottom = '0%';
     container_menu.style.transition = 'all 1s ease-out';
-    titre1.style.display = 'none'
-    titre2.style.display = 'block'
   } else {
     toggle--;
     b2.style.display = 'block'
@@ -31,8 +29,6 @@ btn_nav.addEventListener('click', () => {
     container_menu.style.left = '-100%';
     container_menu.style.bottom = '-100%';
     container_menu.style.transition = 'all 1s ease-in';
-    titre1.style.display = 'block'
-    titre2.style.display = 'none'
   }
 })
 
